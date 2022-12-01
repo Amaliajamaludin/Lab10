@@ -1,3 +1,9 @@
+/*
+ * testSelectionSort.java
+ *
+* To change this template, choose Tools | Template Manager
+ * and open the template in the editor.
+ */
 import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
@@ -37,32 +43,28 @@ testDuplicates();
 
     public void testMixed(){
 
-        /** Test data contains with both positive, negative and zeros **/
-        /** Test data contains with both positive, negative and zeros **/
-		int[] arr = new int[5];
-		arr[0] = 8;
-		arr[1] = -9;
-		arr[2] = 0;
-		arr[3] = -10;
-		arr[4] = -2;
-		int[] Sortedarr = new int[5];
-		Sortedarr[0] = -10;
-		Sortedarr[1] = -9;
-		Sortedarr[2] = -2;
-		Sortedarr[3] = 0;
-		Sortedarr[4] = 8;
+      /** Test data contains with both positive, negative and zeros **/
+  int[] arr = new int[5];
+  arr[0] = 8;
+  arr[1] = -9;
+  arr[2] = 0;
+  arr[3] = -10;
+  arr[4] = -2;
+  int[] Sortedarr = new int[5];
+  Sortedarr[0] = -10;
+  Sortedarr[1] = -9;
+  Sortedarr[2] = -2;
+  Sortedarr[3] = 0;
+  Sortedarr[4] = 8;
 
-		SelectionSort selectionSort = new SelectionSort();
-		/** add tests to check for this unit test **/
-		assertArrayEquals(Sortedarr, selectionSort.basicSelectionSort(arr));
-
+  SelectionSort selectionSort = new SelectionSort();
+  /** add tests to check for this unit test **/
+  assertArrayEquals(Sortedarr, selectionSort.basicSelectionSort(arr));
 
     }
 
     public void testDuplicates(){
-
-        /** Test data contains duplicates **/
-        /** Test data contains duplicates **/
+      /** Test data contains duplicates **/
 		int[] arr = new int[5];
 		arr[0] = 8;
 		arr[1] = 10;
@@ -80,6 +82,5 @@ testDuplicates();
 		SelectionSort selectionSort = new SelectionSort();
 		/** add tests to check for this unit test **/
 		assertArrayEquals(Sortedarr, selectionSort.basicSelectionSort(arr));
-
     }
 }
